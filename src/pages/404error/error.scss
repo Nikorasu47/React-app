@@ -1,0 +1,32 @@
+.error-page{
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.number{
+    color : red ;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.oups{
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 260px;
+}
+
+.return{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
