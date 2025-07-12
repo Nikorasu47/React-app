@@ -1,1 +1,233 @@
-/*# sourceMappingURL=carroussel.css.map */
+.carrousel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  /* Navigation */
+  /* Title + Location vertical on mobile */
+  /* Tags */
+  /* Stars horizontal on mobile */
+  /* Host below stars on mobile */
+  /* Dropdowns vertical */
+}
+.carrousel .navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .navigation .image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.carrousel .navigation .left-arrow,
+.carrousel .navigation .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 65px;
+  width: 55px;
+  cursor: pointer;
+  z-index: 2;
+}
+.carrousel .navigation .left-arrow {
+  left: 20px;
+}
+.carrousel .navigation .right-arrow {
+  right: 20px;
+}
+.carrousel .navigation .image-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.carrousel .title-location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.carrousel .title-location .title {
+  font-size: 1.5rem;
+  color: #ff6060;
+  margin: 0;
+  font-weight: 700;
+  width: 90%;
+}
+.carrousel .title-location .location {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  color: #000;
+}
+.carrousel .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.carrousel .tags .tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+.carrousel .star {
+  display: flex;
+  gap: 5px;
+  margin-top: 0.5rem;
+}
+.carrousel .star .star-red {
+  color: #ff6060;
+}
+.carrousel .star .star-grey {
+  color: #e3e3e3;
+}
+.carrousel .host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 25px;
+  top: 535px;
+}
+.carrousel .host .host-common {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+.carrousel .host .host-common .host-name,
+.carrousel .host .host-common .host-surname {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff6060;
+  margin: 0;
+}
+.carrousel .host .host-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carrousel .dropdowns {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ----------- MEDIA QUERIES >= 768px ----------- */
+@media screen and (min-width: 768px) {
+  .carrousel {
+    gap: 2rem;
+    /* Container for title-location + host side by side */
+    /* Since JSX doesn't have wrapper, on desktop we rely on flex in carrousel */
+    /* To align title-location and host side by side */
+    /* Dropdowns side by side */
+  }
+  .carrousel .navigation .image {
+    height: 415px;
+    border-radius: 20px;
+  }
+  .carrousel .navigation .left-arrow,
+  .carrousel .navigation .right-arrow {
+    height: 75px;
+    width: 65px;
+  }
+  .carrousel .navigation .left-arrow {
+    left: 20px;
+  }
+  .carrousel .navigation .right-arrow {
+    right: 20px;
+  }
+  .carrousel .navigation .image-counter {
+    font-size: 1rem;
+  }
+  .carrousel .carrousel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .carrousel .title-location {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .carrousel .title-location .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  .carrousel .title-location .location {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+  }
+  .carrousel .host {
+    position: absolute;
+    right: 25px;
+    top: 558px;
+  }
+  .carrousel .host .host-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 5px;
+  }
+  .carrousel .host .host-common .host-name,
+  .carrousel .host .host-common .host-surname {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    margin: 0;
+  }
+  .carrousel .host .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carrousel .title-location {
+    width: calc(100% - 90px); /* 90px is approx host width + gap */
+    float: left;
+  }
+  .carrousel .tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .carrousel .tags .tag {
+    font-size: 1rem;
+  }
+  .carrousel .star {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    right: 25px;
+    top: 660px;
+  }
+  .carrousel .dropdowns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .carrousel .dropdowns > * {
+    width: 48%;
+  }
+}/*# sourceMappingURL=carroussel.css.map */

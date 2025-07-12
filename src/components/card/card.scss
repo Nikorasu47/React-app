@@ -1,0 +1,23 @@
+
+  .card {
+    height: 255px;
+    width: 100%;
+    .image {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .title {
+      color: white;
+      z-index: 5;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0%;
+
+      width: 280px;
+      position: relative;
+      bottom: 30%;
+      left: 2%;
+    }
+  }
+

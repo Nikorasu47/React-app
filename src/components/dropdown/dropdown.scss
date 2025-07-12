@@ -1,0 +1,74 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+  
+
+  .visiblePart {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+
+    border-radius: 5px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    height: 30px;
+    width: 100%;
+    .title {
+      font-size: 18px;
+      color: white;
+      margin-left: 10px;
+    }
+    .chevron-icon {
+      transition: transform 0.3s ease;
+
+      color: white;
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+  .divContent {
+    display: block;
+    background-color: #f6f6f673;
+
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    text-wrap: wrap;
+
+    width: 100%;
+
+    padding: 5px;
+    text-align: left;
+    color: black;
+  }
+}
+  @media screen and (min-width: 768px) {
+    .dropdown{
+      width: 80%;
+
+
+    .visiblePart {
+      height: 52px;
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .divContent {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+

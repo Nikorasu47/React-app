@@ -1,8 +1,50 @@
 .banner {
   height: 111px;
+  width: 100%;
+  position: relative;
+}
+.banner .text {
+  color: white;
+  position: absolute;
+  top: 28%;
+  left: 8%;
+  width: 75%;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.banner .text .break {
+  display: block;
+}
+.banner .imag {
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  filter: brightness(60%);
+}
+.banner.no-shadow .imag {
+  box-shadow: none;
+  filter: none;
 }
 
-.text {
-  color: white;
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 223px;
+    margin: 0;
+  }
+  .banner .text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    width: auto;
+  }
+  .banner .text .break {
+    display: none;
+  }
+  .banner .imag {
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=banner.css.map */

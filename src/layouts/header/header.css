@@ -8,21 +8,34 @@
   position: relative;
   margin: 1em;
 }
-
-nav {
+.header nav {
   display: flex;
   gap: 26px;
 }
-
-img {
+.header nav a {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.header nav a:hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header img {
   height: auto;
   width: 145px;
 }
 
-nav a {
-  text-align: center;
-}
-nav a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .header {
+    height: 68px;
+  }
+  .header nav a {
+    font-size: 24px;
+  }
+  .header img {
+    height: auto;
+    width: 210px;
+  }
 }/*# sourceMappingURL=header.css.map */

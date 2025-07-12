@@ -1,0 +1,13 @@
+.apropos {
+  height: auto;
+  width: 100%;
+}
+.apropos .banner .text {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=a-propos.css.map */

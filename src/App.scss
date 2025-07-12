@@ -1,16 +1,16 @@
 #root {
   min-width: 375px;
   min-height: 100vh;
-  margin: 0;
- 
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+
   display: flex;
   flex-direction: column;
-  
-  border: solid 3px red;
 }
 
-.main-content{
-  min-height: 590px;
+.main-content {
+  justify-content: center;
   margin: 1em;
 }
 
@@ -20,4 +20,3 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
