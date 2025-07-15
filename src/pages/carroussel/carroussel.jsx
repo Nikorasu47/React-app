@@ -33,7 +33,7 @@ function Carroussel() {
     );
   };
 
-  // Séparer prénom et nom de l'hôte
+  // Séparer prénom et nom du propriétaire
   const [prenom, nom] = logement.host.name.split(" ");
 
   return (
