@@ -18,9 +18,8 @@
   text-decoration: none;
   color: inherit;
 }
-.header nav a:hover:hover {
+.header nav a.active {
   text-decoration: underline;
-  cursor: pointer;
 }
 .header img {
   height: auto;
@@ -36,6 +35,6 @@
   }
   .header img {
     height: auto;
-    width: 210px;
+    width: auto;
   }
 }/*# sourceMappingURL=header.css.map */

@@ -18,18 +18,20 @@
       text-decoration: none;
       color: inherit;
 
-      &:hover {
-        &:hover {
+      
+        &.active {
           text-decoration: underline;
-          cursor: pointer;
+        
         }
-      }
+        
+      
     }
   }
 
   img {
     height: auto;
     width: 145px;
+    
   }
 }
 
@@ -44,7 +46,7 @@
     }
     img {
       height: auto;
-      width: 210px;
+      width: auto;
     }
   }
 }
